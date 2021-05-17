@@ -38,6 +38,11 @@ html::-webkit-scrollbar-thumb {
 html body {
   background: #F9F9F9;
 }
+html section {
+  min-height: 100vh;
+  padding: 0 7%;
+  padding-top: 12rem;
+}
 
 header {
   position: fixed;
@@ -88,10 +93,71 @@ header .navbar ul li a.active, header .navbar ul li a:hover {
   font-weight: 500;
 }
 
+section.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.home .hero-image {
+  flex: 1 1 40rem;
+}
+section.home .hero-image img {
+  width: 100%;
+}
+section.home .content {
+  flex: 1 1 40rem;
+  max-width: 800px;
+}
+section.home .content h1 {
+  font-size: 2.5em;
+  color: var(--red);
+  margin: 1rem 0;
+  font-weight: 400;
+}
+section.home .content h2 {
+  font-size: 5em;
+  color: #666;
+  font-weight: 500;
+}
+section.home .content p {
+  color: #655;
+  font-size: 2em;
+  max-width: 600px;
+  line-height: 1.5em;
+}
+section.home .content .primary-btn {
+  margin: 2em 0;
+  padding: 1em 2em;
+  background: var(--red);
+  color: #FFF;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 1.7rem;
+}
+section.home .content .primary-btn:hover {
+  background: #FFF;
+  border: 2px solid var(--red);
+  color: var(--red);
+  transform: scale(1);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
     overflow-x: hidden;
+  }
+
+  header .logo {
+    width: 250px;
+  }
+
+  .content {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -133,5 +199,12 @@ header .navbar ul li a.active, header .navbar ul li a:hover {
   }
   header .fa-times {
     transform: rotate(180degs);
+  }
+
+  .home {
+    z-index: 1;
+  }
+  .home .content {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
