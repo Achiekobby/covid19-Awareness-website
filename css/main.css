@@ -162,13 +162,13 @@ section.home .content p {
   font-size: 3.02rem;
 }
 
-section.protect .card-container {
+.card-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-section.protect .card-container .card {
+.card-container .card {
   text-align: center;
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -178,9 +178,10 @@ section.protect .card-container .card {
   border-radius: 2rem;
   box-shadow: 2px 2px 10px #dfd7d8;
 }
-section.protect .card-container .card:hover {
+.card-container .card:hover {
   transform: translateY(-1rem);
 }
+
 section.protect .card-container .card h3 {
   font-size: 2em;
   margin: 1.5em 0;
@@ -273,6 +274,36 @@ section.prevention .row .content ul li {
   font-size: 1.5rem;
   color: #AAA;
   padding: 0.5rem 0;
+}
+
+section.handwash .heading {
+  text-align: center;
+  padding: 1rem;
+}
+section.handwash .card-container .card {
+  position: relative;
+}
+section.handwash .card-container .card h3 {
+  font-size: 2rem;
+  color: #655;
+  padding: 1rem 0;
+}
+section.handwash .card-container .card span {
+  background: red;
+  position: absolute;
+  display: block;
+  top: -2rem;
+  left: -2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background: #FFF;
+  border: 3px solid var(--red);
+  box-shadow: 2px 2px 10px #d1c6c7;
+  color: var(--red);
+  border-radius: 50%;
 }
 
 @media (max-width: 991px) {
