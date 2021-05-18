@@ -5,3 +5,6 @@ navBtn.addEventListener('click',()=>{
     mainNav.classList.toggle('nav-toggle')
     navBtn.classList.toggle("fa-times")
 });
+
+
+
