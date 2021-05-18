@@ -88,7 +88,13 @@ header .navbar ul li a {
   font-size: 1.6em;
   color: #666;
 }
-header .navbar ul li a.active, header .navbar ul li a:hover {
+header .navbar ul li a:hover {
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+  padding: 0.7rem 0;
+  font-weight: 500;
+}
+header .navbar ul li a .link.active {
   color: var(--red);
   border-bottom: 3px solid var(--red);
   padding: 0.7rem 0;
@@ -304,6 +310,93 @@ section.handwash .card-container .card span {
   box-shadow: 2px 2px 10px #d1c6c7;
   color: var(--red);
   border-radius: 50%;
+}
+
+section.spread .heading {
+  text-align: center;
+  padding: 1rem;
+}
+section.spread .image {
+  height: 80vh;
+  width: 100%;
+  background: url("../images/map.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.footer {
+  min-width: auto;
+  padding-top: 0;
+  background: #333;
+  min-height: auto;
+}
+section.footer .footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.footer .footer-container .footer {
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+section.footer .footer-container .footer h3 {
+  font-size: 2.5rem;
+  color: #FFF;
+  padding-bottom: 2rem;
+  font-weight: normal;
+}
+section.footer .footer-container .footer p {
+  font-size: 1.5rem;
+  color: #CCC;
+  padding: 1rem 0;
+  line-height: 1.5em;
+}
+section.footer .footer-container .footer p i {
+  padding-right: 1rem;
+  color: var(--red);
+}
+section.footer .footer-container .footer a {
+  font-size: 1.5rem;
+  color: #CCC;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+section.footer .footer-container .footer a:hover {
+  color: var(--red);
+}
+section.footer .footer-container .footer .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+section.footer .footer-container .footer .share a {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem;
+  font-size: 2em;
+  line-height: 2rem;
+  color: #FFF;
+  text-align: center;
+  border-radius: 5rem;
+  border: 1px solid #FFF;
+}
+section.footer .footer-container .footer .share a:hover {
+  color: var(--red);
+  border: 1px solid var(--red);
+  transform: translateY(-0.5rem);
+}
+section.footer .credit {
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  font-weight: normal;
+  border-top: 0.1rem solid #fff3;
+  font-size: 2rem;
+}
+section.footer .credit a {
+  color: var(--red);
 }
 
 @media (max-width: 991px) {
