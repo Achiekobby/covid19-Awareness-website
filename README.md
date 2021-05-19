@@ -8,5 +8,5 @@ TECHNOLOGIES USED
 3. JAVASCRIPT
 
 CONTACT: 
-+233-557-700-916
-achiekobby17@gmail.com
+1. +233-557-700-916
+2. achiekobby17@gmail.com
