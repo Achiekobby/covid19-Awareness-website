@@ -1,6 +1,6 @@
 COVID - 19 WEBSITE
 
-This is an implementation of a  covid 19 website  comprising of information on prevention, protection and Hand effective handwashing technique
+This is an implementation of a  covid 19 website  comprising of information on prevention, protection and effective handwashing technique
 
 TECHNOLOGIES USED
 1. HTML
